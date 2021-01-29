@@ -1,0 +1,10 @@
+Caused by: doing something important
+    at /Users/rdeusser/src/stacktrace/stacktrace_test.go:17 (github.com/rdeusser/stacktrace.fninlib)
+    at /Users/rdeusser/src/stacktrace/stacktrace_test.go:21 (github.com/rdeusser/stacktrace.TestPropogate)
+    at /usr/local/Cellar/go/1.15.4/libexec/src/testing/testing.go:1123 (testing.tRunner)
+
+Caused by: unmarshaling json <-- json: cannot unmarshal json array to something or other
+    at /Users/rdeusser/src/stacktrace/stacktrace_test.go:12 (github.com/rdeusser/stacktrace.fnlibcalls)
+    at /Users/rdeusser/src/stacktrace/stacktrace_test.go:16 (github.com/rdeusser/stacktrace.fninlib)
+    at /Users/rdeusser/src/stacktrace/stacktrace_test.go:21 (github.com/rdeusser/stacktrace.TestPropogate)
+    at /usr/local/Cellar/go/1.15.4/libexec/src/testing/testing.go:1123 (testing.tRunner)
