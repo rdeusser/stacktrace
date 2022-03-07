@@ -7,17 +7,17 @@ import (
 	"github.com/hexops/autogold"
 )
 
-func fnlibcalls() error {
+func caller() error {
 	err := errors.New("json: cannot unmarshal json array to something or other")
 	return Propagate(err, "unmarshaling json")
 }
 
-func fninlib() error {
-	err := fnlibcalls()
+func callee() error {
+	err := caller()
 	return Propagate(err, "doing something important")
 }
 
-func TestPropogate(t *testing.T) {
-	err := fninlib()
+func TestPropagate(t *testing.T) {
+	err := callee()
 	autogold.Equal(t, autogold.Raw(err.Error()))
 }
